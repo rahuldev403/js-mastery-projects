@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="player">
+      <div class="current-song">
+        <img src="./poasters/image1.jpg" alt="Song Poster" class="song-poster">
+        <div class="song-info">
+          <h2 class="song-title">Bye Bye Bye</h2>
+          <p class="song-artist">Rahul Reynolds</p>
+          
+          <div class="volume-control">
+            <label for="volume">Volume</label><br><b>:</b><br>
+            <input type="range" id="volume" min="0" max="100" value="65">
+          </div>
+          <hr>
+          <span><img class="gif" src="./poasters/music-sounds.gif" alt=""></span>
+        </div>
+      </div>
+      <div class="controls">
+        <button class="control-btn" id="prev"><</button>
+        <button class="control-btn" id="player"><i class="bi bi-play " id="masterPlay"></i></button>
+        <button class="control-btn" id="next">></button>
+      </div>
+      <div class="progress-bar">
+        <input type="range" min="0" max="100" value="0" class="progress">
+      </div>
+    </div>
+    <div class="playlist">
+      <ul class="song-list">
+        <li class="song-item"><span><img class="cover" src="./poasters/image1.jpg"></span><span class="name">Bye Bye Bye</span></li>
+        <li class="song-item"><span><img class="cover" src="./poasters/image2.jpg"></span><span class="name">Hass Hass</span></li>
+        <li class="song-item"><span><img class="cover" src="./poasters/image3.jpg"></span><span class="name">Unstoppable</span></li>
+        <li class="song-item"><span><img class="cover" src="./poasters/image4.jpg"></span><span class="name">Drum</span></li>
+        <li class="song-item"><span><img class="cover" src="./poasters/image5.jpg"></span><span class="name">Xenoxenesis</span></li>
+        <li class="song-item"><span><img class="cover" src="./poasters/image6.jpg"></span><span class="name">Humdard</span></li>
+        <li class="song-item"><span><img class="cover" src="./poasters/image7.jpg"></span><span class="name">One love</span></li>
+        <li class="song-item"><span><img class="cover" src="./poasters/image8.jpg"></span><span class="name">Firse Machayenge</span></li>
+        <li class="song-item"><span><img class="cover" src="./poasters/image9.jpg"></span><span class="name">Soni Soni</span></li>
+        <li class="song-item"><span><img class="cover" src="./poasters/image10.jpg"></span><span class="name">Main Hoon</span></li>
+        <li class="song-item"><span><img class="cover" src="./poasters/image11.jpg"></span><span class="name">SnowMan</span></i></li>
+      </ul>
+    </div>
+  </div>
+  <audio src="/music-player/songs/1.mp3"></audio>
+  <script src="./script.js"></script>
+</body>
+</html>
