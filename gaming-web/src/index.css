@@ -1,3 +1,4 @@
+@import "@splidejs/splide/dist/css/splide.min.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,4 +7,80 @@
   body {
     @apply bg-black text-white relative font-sans h-screen overflow-x-hidden;
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  @apply bg-gray-900 text-white;
+  overflow-x: hidden;
+}
+
+.splide__arrow {
+  @apply bg-gray-800 hover:bg-gray-700;
+}
+
+.splide__pagination__page {
+  @apply bg-gray-600;
+}
+
+.splide__pagination__page.is-active {
+  @apply bg-purple-500;
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.text-gradient-animation {
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #d8b4fe,
+    #8b5cf6,
+    #ffffff
+  ); /* White, Light Purple, Dark Purple, White */
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-shift 4s ease-in-out infinite;
+}
+html {
+  scroll-behavior: smooth;
+}
+@keyframes gradient-x {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 5s ease-in-out infinite;
+}
+@keyframes gradient-x {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 5s ease-in-out infinite;
 }
