@@ -1,6 +1,6 @@
 import { useState } from "react";
 import AuthPopup from "./AuthPopup";
-import CustomCursor from "./CustomCursor";
+//import CustomCursor from "./CustomCursor";
 
 const Hero = () => {
   const [showAuth, setShowAuth] = useState(false);
@@ -56,7 +56,7 @@ const Hero = () => {
       {/* Auth Popup */}
       <AuthPopup open={showAuth} onClose={() => setShowAuth(false)} />
       {/* Custom Cursor: disable when AuthPopup is open */}
-      <CustomCursor isActive={isHovering} disabled={showAuth} />
+      {/* <CustomCursor isActive={isHovering} disabled={showAuth} /> */}
     </main>
   );
 };

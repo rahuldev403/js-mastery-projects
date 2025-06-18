@@ -12,6 +12,7 @@
   "dependencies": {
     "@gsap/react": "^2.1.2",
     "@react-spring/web": "^10.0.1",
+    "@react-three/drei": "^10.3.0",
     "@splidejs/react-splide": "^0.7.12",
     "@splinetool/react-spline": "^4.0.0",
     "framer-motion": "^12.18.1",
